@@ -26,7 +26,7 @@ export default function TextArea({
       value={value}
       onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onChange(e)}
       className={cn(
-        'block py-3 px-4 border-none hover:outline-none w-full rounded-lg dark:bg-neutral-900 text-foreground dark:text-white',
+        'block py-3 px-4 border-none border-transparent w-full rounded-lg dark:bg-neutral-900 text-foreground dark:text-white',
         cssClasses,
       )}
     />

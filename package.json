@@ -11,12 +11,17 @@
     "format:all": "npx prettier . --write"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.17.0",
+    "@types/react-speech-recognition": "^3.9.5",
+    "@types/regenerator-runtime": "^0.13.7",
     "clsx": "^2.1.1",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.11",
     "preline": "^2.4.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-speech-recognition": "^3.10.0",
+    "regenerator-runtime": "^0.14.1",
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
