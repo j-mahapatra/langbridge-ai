@@ -3,6 +3,7 @@ import {
   IconMicrophone,
   IconMicrophoneOff,
   IconPlayerStopFilled,
+  IconVolume,
   IconProps,
 } from '@tabler/icons-react';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
@@ -13,4 +14,5 @@ export const Icons: {
   microphoneOn: IconMicrophone,
   microphoneOff: IconMicrophoneOff,
   stop: IconPlayerStopFilled,
+  volume: IconVolume,
 };
