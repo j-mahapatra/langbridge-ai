@@ -20,7 +20,7 @@ export default function TextUpload({ setUploadedText }: TextUploadProps) {
 
   return (
     <label htmlFor="file-upload" className="cursor-pointer hover:text-primary">
-      <Icons.upload size={24} />
+      <Icons.upload size={36} />
       <input
         type="file"
         id="file-upload"

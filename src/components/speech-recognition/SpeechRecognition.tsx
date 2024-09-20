@@ -33,9 +33,9 @@ export default function SpeechRecognitionButton({
   return (
     <div className="hover:text-primary cursor-pointer">
       {listening ? (
-        <Icons.stop onClick={() => handleRecordVoice()} size={24} />
+        <Icons.stop onClick={() => handleRecordVoice()} size={36} />
       ) : (
-        <Icons.microphoneOn onClick={() => handleRecordVoice()} size={24} />
+        <Icons.microphoneOn onClick={() => handleRecordVoice()} size={36} />
       )}
     </div>
   );

@@ -6,6 +6,7 @@ import {
   IconVolume,
   IconProps,
   IconFileUpload,
+  IconCaretDownFilled,
 } from '@tabler/icons-react';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 
@@ -17,4 +18,5 @@ export const Icons: {
   stop: IconPlayerStopFilled,
   volume: IconVolume,
   upload: IconFileUpload,
+  caretDown: IconCaretDownFilled,
 };

@@ -13,7 +13,7 @@ export default function TextToAudio({ text }: TextToAudioProps) {
   return (
     <div className="hover:text-primary cursor-pointer">
       <Icons.volume
-        size={24}
+        size={36}
         onClick={() => handleAudioButtonClick(text)}
         className="cursor-pointer hover:text-primary"
       />

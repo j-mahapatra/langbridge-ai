@@ -7,13 +7,16 @@ import SpeechRecognitionButton from '@/components/speech-recognition/SpeechRecog
 import TextToAudio from '@/components/text-to-audio/TextToAudio';
 import TextUpload from '@/components/text-upload/TextUpload';
 import TextArea from '@/components/ui/TextArea';
+import Combobox from '@/components/ui/Combobox';
+import { languages } from '@/lib/constants';
 
 export default function Translate() {
   const [inputText, setInputText] = useState<string>('');
+  const [selectedLanguage, setSelectedLanguage] = useState('');
 
   const { translatedText } = useTranslate({
     text: inputText,
-    language: 'English',
+    language: selectedLanguage,
   });
 
   return (
@@ -38,13 +41,23 @@ export default function Translate() {
         </div>
         <div className="row-span-1 w-full h-full flex justify-center items-center">
           <div className="flex w-full justify-center items-center">
-            <TextArea
-              id="input-box"
-              value={translatedText}
-              rows={8}
-              onChange={() => {}}
-              contentEditable={false}
-            />
+            <div className="flex flex-col w-full justify-center items-center">
+              <TextArea
+                id="input-box"
+                value={translatedText}
+                rows={8}
+                onChange={() => {}}
+                contentEditable={false}
+              />
+              <div className="flex w-full p-1 space-x-2 justify-start">
+                <Combobox
+                  options={languages}
+                  inputValue={selectedLanguage}
+                  setInputValue={setSelectedLanguage}
+                  placeholder="Select a Language"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
