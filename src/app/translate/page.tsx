@@ -9,6 +9,7 @@ import TextUpload from '@/components/text-upload/TextUpload';
 import TextArea from '@/components/ui/TextArea';
 import Combobox from '@/components/ui/Combobox';
 import { languages } from '@/lib/constants';
+import CopyToClipboard from '@/components/copy-to-clipboard/CopyToClipboard';
 
 export default function Translate() {
   const [inputText, setInputText] = useState<string>('');
@@ -32,7 +33,7 @@ export default function Translate() {
               placeholder="Enter your text here..."
               onChange={(e) => setInputText(e.target.value)}
             />
-            <div className="flex w-full p-1 space-x-2 justify-start">
+            <div className="flex w-full p-1 my-2 space-x-2 justify-start">
               <SpeechRecognitionButton setInputText={setInputText} />
               <TextToAudio text={inputText} />
               <TextUpload setUploadedText={setInputText} />
@@ -49,13 +50,14 @@ export default function Translate() {
                 onChange={() => {}}
                 contentEditable={false}
               />
-              <div className="flex w-full p-1 space-x-2 justify-start">
+              <div className="flex w-full p-1 my-2 justify-between">
                 <Combobox
                   options={languages}
                   inputValue={selectedLanguage}
                   setInputValue={setSelectedLanguage}
                   placeholder="Select a Language"
                 />
+                <CopyToClipboard text={translatedText} />
               </div>
             </div>
           </div>

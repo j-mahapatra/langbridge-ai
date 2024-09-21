@@ -7,6 +7,8 @@ import {
   IconProps,
   IconFileUpload,
   IconCaretDownFilled,
+  IconSquareRoundedCheck,
+  IconCopy,
 } from '@tabler/icons-react';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 
@@ -19,4 +21,6 @@ export const Icons: {
   volume: IconVolume,
   upload: IconFileUpload,
   caretDown: IconCaretDownFilled,
+  squareRoundedCheck: IconSquareRoundedCheck,
+  copy: IconCopy,
 };
