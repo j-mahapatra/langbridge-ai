@@ -9,5 +9,5 @@ A translator web application made in Next.js that utilizes the power of Gemini A
 - Copy translated text with the click of a button.
 
 ## Screenshots:
-![1](https://github.com/user-attachments/assets/a56733e3-f12d-4d42-8bcd-698a85c45f3e)
-![2](https://github.com/user-attachments/assets/65f962cf-4f8c-4ec3-b7d1-117a319e3867)
+![1](https://github.com/user-attachments/assets/fd2dae4f-34c7-4597-abe4-5076af6dd0d7)
+![2](https://github.com/user-attachments/assets/48693b2a-d1ed-4373-ae76-97387a0a5227)
