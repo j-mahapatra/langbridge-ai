@@ -10,8 +10,13 @@ export default function useTranslate({ text, language }: UseTranslateProps) {
 
   useEffect(() => {
     const handleTranslate = async () => {
+      if (!text) {
+        setOutputText('');
+        return;
+      }
       if (!language) {
         setOutputText('Select a language first.');
+        return;
       }
       try {
         const response = await fetch('/api/ask-ai', {
