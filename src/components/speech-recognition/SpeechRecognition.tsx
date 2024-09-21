@@ -6,6 +6,7 @@ import SpeechRecognition, {
   useSpeechRecognition,
 } from 'react-speech-recognition';
 import { Icons } from '@/lib/icons';
+import { cn } from '@/lib/utils';
 
 interface SpeechRecognitionProps {
   setInputText: React.Dispatch<React.SetStateAction<string>>;
@@ -31,7 +32,12 @@ export default function SpeechRecognitionButton({
   };
 
   return (
-    <div className="hover:text-primary cursor-pointer">
+    <div
+      className={cn(
+        'cursor-pointer',
+        listening ? 'hover:text-red-900' : 'hover:text-primary',
+      )}
+    >
       {listening ? (
         <Icons.stop onClick={() => handleRecordVoice()} size={36} />
       ) : (

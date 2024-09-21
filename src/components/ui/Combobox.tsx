@@ -1,6 +1,7 @@
 // components/ComboBox.tsx
 
 import { Icons } from '@/lib/icons';
+import { cn } from '@/lib/utils';
 import React, { useEffect, useRef, useState } from 'react';
 
 interface ComboBoxProps {
@@ -96,12 +97,12 @@ export default function ComboBox({
                 key={option}
                 onClick={() => handleOptionClick(option)}
                 onMouseEnter={() => setHighlightedIndex(index)}
-                className={`px-4 py-2 cursor-pointer 
-                  ${
-                    highlightedIndex === index
-                      ? 'bg-[#255fc9] text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-                  }`}
+                className={cn(
+                  'px-4 py-2 cursor-pointer',
+                  highlightedIndex === index
+                    ? 'bg-[#255fc9] text-white'
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                )}
               >
                 {option}
               </li>
