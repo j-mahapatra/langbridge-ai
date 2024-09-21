@@ -9,6 +9,7 @@ import {
   IconCaretDownFilled,
   IconSquareRoundedCheck,
   IconCopy,
+  IconBrandGithub,
 } from '@tabler/icons-react';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 
@@ -23,4 +24,5 @@ export const Icons: {
   caretDown: IconCaretDownFilled,
   squareRoundedCheck: IconSquareRoundedCheck,
   copy: IconCopy,
+  github: IconBrandGithub,
 };

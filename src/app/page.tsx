@@ -1,4 +1,5 @@
 import DotBackgroundContainer from '@/components/ui/DotBackgroundContainer';
+import ShimmerButton from '@/components/ui/ShimmerButton';
 import Link from 'next/link';
 
 export default function Home() {
@@ -14,12 +15,9 @@ export default function Home() {
           Bridge the language gap with the power of Artificial Intelligence
         </p>
         <div className="flex justify-center w-full py-8">
-          <Link
-            href={'/translate'}
-            className="bg-primary p-2 rounded-sm hover:bg-blue-600 transition-all"
-          >
-            Start Translating
-          </Link>
+          <ShimmerButton>
+            <Link href={'/translate'}>Start Translating</Link>
+          </ShimmerButton>
         </div>
       </div>
     </DotBackgroundContainer>
